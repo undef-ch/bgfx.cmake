@@ -10,5 +10,5 @@
 
 add_custom_target( tools )
 
-include( cmake/tools/geometryc.cmake )
-include( cmake/tools/shaderc.cmake )
+include( ${BGFX_CMAKE_DIR}/cmake/tools/geometryc.cmake )
+include( ${BGFX_CMAKE_DIR}/cmake/tools/shaderc.cmake )
