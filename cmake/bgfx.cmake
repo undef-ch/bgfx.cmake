@@ -21,7 +21,7 @@ file( GLOB BGFX_SOURCES ${BGFX_DIR}/src/*.cpp ${BGFX_DIR}/src/*.mm ${BGFX_DIR}/s
 add_library( bgfx STATIC ${BGFX_SOURCES} )
 
 # Enable BGFX_CONFIG_DEBUG in Debug configuration
-target_compile_definitions( bgfx PRIVATE "$<$<CONFIG:Debug>:BGFX_CONFIG_DEBUG=1>" )
+# target_compile_definitions( bgfx PRIVATE "$<$<CONFIG:Debug>:BGFX_CONFIG_DEBUG=1>" )
 
 # Special Visual Studio Flags
 if( MSVC )
