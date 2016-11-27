@@ -43,6 +43,6 @@ file( GLOB OPENHMD_SOURCES ${BGFX_DIR}/3rdparty/openHMD/src/*.c ${BGFX_DIR}/3rdp
 add_library( openHMD STATIC ${OPENHMD_SOURCES} )
 target_compile_definitions( openHMD PRIVATE "-DDRIVER_OCULUS_RIFT")
 target_include_directories( openHMD PUBLIC ${BGFX_DIR}/3rdparty/openHMD/include ${HIDAPI_INCLUDE_DIR})
-target_link_libraries( openHMD PUBLIC bx ${HIDAPI_LIBRARY})
+target_link_libraries( openHMD PUBLIC ${HIDAPI_LIBRARY})
 set_target_properties( openHMD PROPERTIES FOLDER "bgfx/3rdparty" )
 set_target_properties( openHMD PROPERTIES LINKER_LANGUAGE CXX )
